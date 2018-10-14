@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-capitalize>Checked Shirt</ion-title>
+    <ion-buttons class="head-btns" end>
+      <button (click)="presentCartModal()" ion-button icon-only>
+        <ion-icon name="md-cart"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="detail-content">
+  <img src="assets/img/celetro.png" class="det-img" />
+  <ion-card>
+    <ion-item>
+      CELETRO
+      <button color="grayColor" ion-button item-right>CONTATO</button>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      QUEM SOMOS
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        It is a long established fact that a reader will be distracted by 
+        the readable content of a page when looking at its layout. 
+        The point of using Lorem Ipsum is that it has a more-or-less 
+        normal distribution of letters, as opposed to using 'Content 
+        here, content here', making it look like readable English.
+      </p>
+    </ion-card-content>
+
+     
+ 
+  </ion-card>
+
+  <button (click)="presentCartModal()" ion-button block text-uppercase color="secondary" class="app-btn">
+    <ion-icon name="md-cart" color="light"></ion-icon>
+    FAVORITOS
+  </button>
+</ion-content>
